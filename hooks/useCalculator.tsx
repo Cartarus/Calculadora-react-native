@@ -115,6 +115,7 @@ export const useCalculator = () => {
   const calculateResult = () => {
     const result = calculateSubResult();
     setFormula(`${result}`);
+    setNumber(result.toString());
     lastOperation.current = undefined;
     setPreviousNumber("0");
   };
